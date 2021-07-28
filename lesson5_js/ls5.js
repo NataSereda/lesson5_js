@@ -26,14 +26,14 @@ for (const fcRule of fc_rules) {
 
 let fc_rules = document.getElementsByClassName(`fc_rules`);
 for (const fcRule of fc_rules) {
-    fcRule.addEventListener(`click`,(evt => {
+    fcRule.addEventListener(`click`,(event => {
         console.log (fcRule.textContent)
     }))
-    fcRule.addEventListener(`click`,(evt => {
-        console.log ("kjknjkn")
+    fcRule.addEventListener(`click`,(event => {
+        console.log ("Життя прекрасне")
     }))
     
-};
+}
 
 
 
