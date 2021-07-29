@@ -6,6 +6,9 @@
 </head>
 <body>
 
+<!--Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
+https://jsonplaceholder.typicode.com/posts
+-->
 <!--
 <div class="posts_box"></div>
 <div class="albums_box"></div>
@@ -56,7 +59,7 @@
                 let commentsBox = document.getElementsByClassName('comments_box')[0];
                 for (const comment of comments) {
                     let pComments = document.createElement(`p`);
-                    pComments.innerText = `${comment.id} - ${comment.email} - ${comment.name}`;
+                    pComments.innerText = `${comment.id} - ${comment.email} - ${comment.name} - ${comment.body}`;
                     let detailsBtn = document.createElement('button');
                     detailsBtn.innerText = 'show';
                     detailsBtn.onclick = function () {
@@ -81,8 +84,6 @@
             }
         );
 </script>
-
-
 
 </body>
 </html>
